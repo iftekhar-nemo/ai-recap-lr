@@ -10,7 +10,7 @@ sub = np.subtract(a,b)
 square = np.square(a)
 add = np.add(a,b)
 
-print(add)
+print("Summation :", add, "Substraction:", sub, "Divition :", divi, "Square : ", square, "Multiply: ", multi)
 
 
 
@@ -21,13 +21,11 @@ partb = np.arange(1,21)
 evn = partb[partb%2 == 0 ]
 biggerThenTen = partb[partb > 10]
 
-print(evn, biggerThenTen)
-
-
-#3x3
+print("Even Number :", evn, "Number is bigger than 10: ", biggerThenTen)
 
 ndm = np.array([[10,20,30], [40,50,60], [70,80,90]])
-print(ndm.T)
-print(np.transpose(ndm))
+print("Matrix transpose only usin T :", ndm.T)
+print("Matrix transpse using np  transpose method: ", np.transpose(ndm))
 
-print(ndm.sum(1))
+print("Raw summation: ", ndm.sum(1))
+print("Column summation: ", ndm.sum(0))
