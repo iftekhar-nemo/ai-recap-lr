@@ -49,7 +49,7 @@ plt.show()
 
 
 
-plt.subplot(1,3,1)
+""" plt.subplot(1,3,1)
 plt.title("Avg Number")
 df.plot(x='name', y='total_score', marker='o', ls='dotted')
 plt.xlabel("Student Name")
@@ -65,6 +65,34 @@ plt.legend(['Math', 'English', 'Science'])
 
 plt.subplot(1,3,3)
 plt.title("Avg Score Histogram")
-plt.hist(df['avg_score'], bins=5)
+plt.hist(df['avg_score'], bins=5) """
+
+
+fig, axes = plt.subplots(1,3, figsize=(15,5))
+
+axes[0].bar(df['name'], df['total_score'])
+axes[0].set_title("Total Score")
+axes[0].set_xlabel("Student Name")
+axes[0].set_ylabel("Total Score")
+
+axes[1].plot(df['math_score'], marker='o', label='Math')
+axes[1].plot(df['english_score'], marker='o', label='English')
+axes[1].plot(df['science_score'], marker='o', label='Science')
+axes[1].set_title("Subject Scores")
+axes[1].legend()
+
+axes[2].hist(df['avg_score'], bins=5)
+axes[2].set_title("Avg Score Distribution")
+
+
+
+
+
+
+
+
+
+
+
 
 plt.show()
