@@ -1,11 +1,6 @@
 import numpy as np
 import pandas as pd
 
-""" tmpArr = []
-for i in range(1, 101):
-    tmpArr.append(i)
-arr = np.array(tmpArr) """
-
 
 arr = np.arange(1, 101)
 

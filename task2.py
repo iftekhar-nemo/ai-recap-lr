@@ -12,10 +12,6 @@ add = np.add(a,b)
 
 print("Summation :", add, "Substraction:", sub, "Divition :", divi, "Square : ", square, "Multiply: ", multi)
 
-
-
-
-
 partb = np.arange(1,21)
 
 evn = partb[partb%2 == 0 ]

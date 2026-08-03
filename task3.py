@@ -46,7 +46,6 @@ print("Usinf describe method :",df.describe())
 
 
 print("Sorted by math score:\n", df.sort_values("math_score", ascending=False))
-
 print("show Grade A Student: ", df[df["grade"] == "A"])
 
 citygrp = df.groupby("city")["avg_score"].mean()
