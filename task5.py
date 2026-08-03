@@ -12,12 +12,8 @@ data = {
 
 df = pd.DataFrame(data)
 x=df[["study_hours"]]
-print(x)
-y=df['exam_score']
+y=df[['exam_score']]
 
-plt.scatter(x,y)
-plt.grid()
-plt.show()
 
 model = LinearRegression()
 
@@ -35,3 +31,4 @@ plt.xlabel("Study Hours")
 plt.ylabel("Exam Score")
 plt.legend()
 plt.show()
+
